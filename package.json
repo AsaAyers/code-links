@@ -9,6 +9,7 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
+    "resolve": "^1.1.5",
     "sub-atom": "^0.1.4"
   }
 }
