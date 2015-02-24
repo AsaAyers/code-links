@@ -4,11 +4,13 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.atom-links .region {
-    border-bottom: thin solid blue;
-}
-
-.atom-links .region {
-  border-bottom: 1px dotted lime;
-  position: absolute;
+atom-text-editor::shadow {
+    .atom-links .region {
+        // Needs to be clickable
+        pointer-events: auto;
+        // regions are not normally clickable and have a z-index of -1.
+        // 1 seems to work, but I don't know if that might change later.
+        z-index: 1;
+        border-bottom: thin solid blue;
+    }
 }
