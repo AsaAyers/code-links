@@ -1,5 +1,6 @@
 # code-links package
 
-A short description of your package.
+Makes parts of your code linkable using ctrl+click. Pluggable architecture
+allows other plugins to provide link locations and destinations.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![screenshot](https://raw.githubusercontent.com/AsaAyers/code-links/master/screenshot.png)

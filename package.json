@@ -2,8 +2,8 @@
   "name": "code-links",
   "main": "./lib/code-links",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "repository": "https://github.com/atom/code-links",
+  "description": "Provides the ability to ctrl+click around your project.",
+  "repository": "https://github.com/AsaAyers/code-links",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
@@ -11,15 +11,15 @@
   "consumedServices": {
       "code-links": {
           "versions": {
-              "^0.0.1": "consumeLinkProviderV0"
+              "^0.1.0": "consumeLinkProviderV0"
           }
       }
   },
   "providedServices": {
       "code-links": {
-          "description": "Does a useful thing",
+          "description": "Provides code links for Javascript files.",
           "versions": {
-              "0.0.1": "provideJavascriptLinks"
+              "0.1.0": "provideJavascriptLinks"
           }
       }
   },
