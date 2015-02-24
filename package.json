@@ -1,9 +1,9 @@
 {
-  "name": "atom-links",
-  "main": "./lib/atom-links",
+  "name": "code-links",
+  "main": "./lib/code-links",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "repository": "https://github.com/atom/atom-links",
+  "repository": "https://github.com/atom/code-links",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"

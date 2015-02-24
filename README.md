@@ -1,4 +1,4 @@
-# atom-links package
+# code-links package
 
 A short description of your package.
 
