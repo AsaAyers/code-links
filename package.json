@@ -8,6 +8,21 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
+  "consumedServices": {
+      "code-links": {
+          "versions": {
+              "^0.0.1": "consumeLinkProviderV0"
+          }
+      }
+  },
+  "providedServices": {
+      "code-links": {
+          "description": "Does a useful thing",
+          "versions": {
+              "0.0.1": "provideJavascriptLinks"
+          }
+      }
+  },
   "dependencies": {
     "resolve": "^1.1.5",
     "sub-atom": "^0.1.4"
