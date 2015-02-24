@@ -1,7 +1,7 @@
 {
   "name": "code-links",
   "main": "./lib/code-links",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Provides the ability to ctrl+click around your project.",
   "repository": "https://github.com/AsaAyers/code-links",
   "license": "MIT",
@@ -9,19 +9,19 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "consumedServices": {
-      "code-links": {
-          "versions": {
-              "^0.1.0": "consumeLinkProviderV0"
-          }
+    "code-links": {
+      "versions": {
+        "^0.1.0": "consumeLinkProviderV0"
       }
+    }
   },
   "providedServices": {
-      "code-links": {
-          "description": "Provides code links for Javascript files.",
-          "versions": {
-              "0.1.0": "provideJavascriptLinks"
-          }
+    "code-links": {
+      "description": "Provides code links for Javascript files.",
+      "versions": {
+        "0.1.0": "provideJavascriptLinks"
       }
+    }
   },
   "dependencies": {
     "resolve": "^1.1.5",
