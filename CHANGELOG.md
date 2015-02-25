@@ -1,3 +1,6 @@
+## 0.2.0
+* Detect macs and switch to the alt key (this will probably become configurable)
+
 ## 0.1.2
 * Also match paths starting with `../`
 
