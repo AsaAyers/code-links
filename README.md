@@ -7,3 +7,20 @@ I have been informed that on a mac ctrl+click opens the context menu. v0.2.0
 will detect this and use alt instead.
 
 ![screenshot](https://raw.githubusercontent.com/AsaAyers/code-links/master/screenshot.png)
+
+# Upcoming plans
+
+* core
+  * Hide the underlines by default, only show them while holding the modifier key.
+  * Add the ability to jump to a specific line in a file once it's open.
+* JavaScript Processor
+  * Parse the AST and read all `require()`s and `imports`.
+  * Jump using module names that aren't relative paths.
+    * This may need to go find a package.json and read it's `main` to find the right file.
+  * Make variables into links so you can jump to where they're defined.
+
+        const SubAtom = require('sub-atom')
+        // ... many lines later ...
+        this.subs = new SubAtom()
+        //              ^
+        // Jump the same as clicking the require
