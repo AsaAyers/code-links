@@ -1,3 +1,15 @@
+## 0.3.0 - Semver!
+* Until 1.0 and 0.x increases indicate a non-backward compatible api change.
+* Added tests for `javascript-processor`
+* [service] Changed `processEditor(editor)` to `process(source)`. `source` is just the plain text of what is in the editor.
+* [service] No need to return a `processor` property. Just return an array of objects
+with a `range`
+
+      [
+      { range: [ [line, startColumn], [line,endColumn] ] },
+      { range: [ [line, startColumn], [line,endColumn] ] }
+      ]
+
 ## 0.2.0
 * Detect macs and switch to the alt key (this will probably become configurable)
 
