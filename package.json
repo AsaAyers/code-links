@@ -11,7 +11,7 @@
   "consumedServices": {
     "code-links": {
       "versions": {
-        "^0.1.0": "consumeLinkProviderV0"
+        "^0.2.0": "consumeLinkProviderV0"
       }
     }
   },
@@ -19,12 +19,12 @@
     "code-links": {
       "description": "Provides code links for Javascript files.",
       "versions": {
-        "0.1.0": "provideJavascriptLinks"
+        "0.2.0": "provideJavascriptLinks"
       }
     }
   },
   "dependencies": {
     "resolve": "^1.1.5",
-    "sub-atom": "^0.1.4"
+    "sub-atom": "^1.0.0"
   }
 }
