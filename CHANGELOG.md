@@ -1,4 +1,9 @@
-## 0.3.0 - Semver!
+## 0.3.2
+* [service] optional `scanForDestination()` to let providers jump to a specific location in the destination file.
+* `javascript-processor` now jumps to `module.exports`
+
+## 0.3.1 - Semver!
+* 0.3.0 was tagged but failed to publish to apm.
 * Until 1.0 and 0.x increases indicate a non-backward compatible api change.
 * Added tests for `javascript-processor`
 * [service] Changed `processEditor(editor)` to `process(source)`. `source` is just the plain text of what is in the editor.

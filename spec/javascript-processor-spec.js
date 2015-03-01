@@ -1,15 +1,6 @@
-'use 6to5';
+'use babel';
 /*eslint-env jasmine */
 let processor = require('../lib/javascript-processor.js');
-
-const source = `
-let relativeJS = require('./same.js')
-var relativeLESS = require('./same.less')
-const relative = require('./same')
-let relativeParent = require('../parent')
-let moduleName = require('some-module')
-let modulePath = require('some/complex/path')
-`;
 
 const findLine = function(target, sourceLines) {
     let reg = new RegExp(`\\b${target}\\b`);
@@ -29,6 +20,14 @@ const linkForLine = function (links, lineNumber) {
 describe('javascript-processor', function() {
     describe('process()', function() {
         beforeEach(function() {
+            const source = `
+            let relativeJS = require('./same.js')
+            var relativeLESS = require('./same.less')
+            const relative = require('./same')
+            let relativeParent = require('../parent')
+            let moduleName = require('some-module')
+            let modulePath = require('some/complex/path')
+            `;
             let result = processor.process(source);
 
             this.addMatchers({
@@ -75,28 +74,26 @@ describe('javascript-processor', function() {
         });
     });
     describe('followLink()', function() {
-        const fakeFilesystem = {
-            'a.js': 'require("./child/b")',
-            child: {
-                'b.js': 'require("./c")',
-                // coffee extensions are included in the search
-                'c.coffee': 'require("../d")',
-            },
-            'd.js': 'require("./e")',
-            // Node doesn't resolve text files
-            'e.txt': 'Hello'
+        // I don't know how to write tests for this.
+    });
+    describe('scanForDestination()', function() {
+        let scanFor = function(source, target) {
+
+            let [ lineNum, col ] = processor.scanForDestination(source);
+            let actual = source.split('\n')[lineNum]
+                .slice(col, col + target.length );
+            expect(actual).toBe(target);
         };
 
-        it('should return the full path when the file exists', function() {
-            spyOn(processor, '_resolve').andRunFake(function(modulePath, opts) {
-                
-            })
+        it('locates module.exports', function() {
+            let source = `
+            class Same {
 
-            let actual = processor.followLink('foo/bar.js', {
-                modulePath: './same'
-            });
+            }
 
-            expect(actual).toBe('./same.js');
+            module.exports = Same
+            `;
+            scanFor(source, 'module.exports');
         });
     });
 });
