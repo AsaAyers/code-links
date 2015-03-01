@@ -1,0 +1,8 @@
+# I realize polluting body with .code-links-{ctrl,alt} is not ideal, but I don't
+# see a better solution. I couldn't extract which key is being pressed in the
+# event handler to match against the config.
+
+'body.code-links-ctrl atom-text-editor': {
+  'ctrl': 'code-links:tmp-show-links'
+}
+'body.code-links-alt atom-text-editor': {  'alt': 'code-links:tmp-show-links'}

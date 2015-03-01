@@ -10,6 +10,9 @@ with a `range`
       { range: [ [line, startColumn], [line,endColumn] ] }
       ]
 
+* Settings - You can change your modifier key
+* Settings - By default links will only be visible while holding the modifier key.
+
 ## 0.2.0
 * Detect macs and switch to the alt key (this will probably become configurable)
 

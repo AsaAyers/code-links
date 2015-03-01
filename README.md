@@ -13,13 +13,13 @@ will detect this and use alt instead.
 # Upcoming plans
 
 * core
-  * Hide the underlines by default, only show them while holding the modifier key.
-  * Add the ability to jump to a specific line in a file once it's open.
+  * [x] Hide the underlines by default, only show them while holding the modifier key.
+  * [ ] Add the ability to jump to a specific line in a file once it's open.
 * JavaScript Processor
-  * Parse the AST and read all `require()`s and `imports`.
-  * Jump using module names that aren't relative paths.
-    * This may need to go find a package.json and read it's `main` to find the right file.
-  * Make variables into links so you can jump to where they're defined.
+  * [ ] Parse the AST and read all `require()`s and `imports`.
+  * [ ] Jump using module names that aren't relative paths.
+    * This may need to go find a `package.json` and read it's `main` to find the right file.
+  * [ ] Make variables into links so you can jump to where they're defined.
 
         const SubAtom = require('sub-atom')
         // ... many lines later ...
