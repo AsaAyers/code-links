@@ -1,5 +1,6 @@
 ## 0.3.3
 * [service] Providers can return http/https URLs
+* :bug: Prevent modifier key from triggering when display mode is `always`
 
 ## 0.3.2
 * [service] optional `scanForDestination()` to let providers jump to a specific location in the destination file.
