@@ -14,7 +14,7 @@ will detect this and use alt instead.
 
 * core
   * [x] Hide the underlines by default, only show them while holding the modifier key.
-  * [ ] Add the ability to jump to a specific line in a file once it's open.
+  * [x] Add the ability to jump to a specific line in a file once it's open.
 * JavaScript Processor
   * [ ] Parse the AST and read all `require()`s and `imports`.
   * [ ] Jump using module names that aren't relative paths.
