@@ -1,3 +1,6 @@
+## 0.3.3
+* [service] Providers can return http/https URLs
+
 ## 0.3.2
 * [service] optional `scanForDestination()` to let providers jump to a specific location in the destination file.
 * `javascript-processor` now jumps to `module.exports`
