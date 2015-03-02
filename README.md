@@ -10,6 +10,10 @@ will detect this and use alt instead.
 
 ![screenshot](https://raw.githubusercontent.com/AsaAyers/code-links/master/screenshot.png)
 
+## Known plugins
+
+* [coffee-links](https://atom.io/packages/coffee-links)
+
 # Upcoming plans
 
 * core
