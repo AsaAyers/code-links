@@ -20,9 +20,8 @@ will detect this and use alt instead.
   * [x] Hide the underlines by default, only show them while holding the modifier key.
   * [x] Add the ability to jump to a specific line in a file once it's open.
 * JavaScript Processor
-  * [ ] Parse the AST and read all `require()`s and `imports`.
-  * [ ] Jump using module names that aren't relative paths.
-    * This may need to go find a `package.json` and read it's `main` to find the right file.
+  * [x] Parse the AST and read all `require()`s and `imports`.
+  * [x] Jump using module names that aren't relative paths.
   * [ ] Make variables into links so you can jump to where they're defined.
 
         const SubAtom = require('sub-atom')
