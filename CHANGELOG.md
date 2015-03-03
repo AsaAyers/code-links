@@ -1,4 +1,4 @@
-## 0.3.4
+## 0.3.5
 * :bug: Opening paths was happening relative to the root, so any link to a file starting with `../` would actually go outside your project.
 
 ## 0.3.3
