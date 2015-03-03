@@ -1,3 +1,6 @@
+## 0.3.4
+* :bug: Opening paths was happening relative to the root, so any link to a file starting with `../` would actually go outside your project.
+
 ## 0.3.3
 * [service] Providers can return http/https URLs
 * :bug: Prevent modifier key from triggering when display mode is `always`
