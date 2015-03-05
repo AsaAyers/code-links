@@ -1,3 +1,8 @@
+## 0.3.6
+* Prevent ctrl+click from creating multiple cursors when ctrl+clicking a link
+* :memo: Documentation on how to create compatible plugins
+* URLs open in `web-browser` if it's installed. Otherwise they open in your external browser.
+
 ## 0.3.5
 * :bug: Opening paths was happening relative to the root, so any link to a file starting with `../` would actually go outside your project.
 
