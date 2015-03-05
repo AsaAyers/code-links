@@ -14,6 +14,10 @@ will detect this and use alt instead.
 
 * [coffee-links](https://atom.io/packages/coffee-links)
 
+## Web Page URLs
+
+Plugins may choose to link to URLs instead of a file on disk. The link opens the URL in the default external browser or shows the web page inside atom if the package `web-browser` is installed.
+
 # Upcoming plans
 
 * core
@@ -24,8 +28,10 @@ will detect this and use alt instead.
   * [x] Jump using module names that aren't relative paths.
   * [ ] Make variables into links so you can jump to where they're defined.
 
-        const SubAtom = require('sub-atom')
-        // ... many lines later ...
-        this.subs = new SubAtom()
-        //              ^
-        // Jump the same as clicking the require
+```javascript
+const SubAtom = require('sub-atom')
+// ... many lines later ...
+    this.subs = new SubAtom()
+    //              ^
+    // Jump the same as if you clicked the require.
+```
