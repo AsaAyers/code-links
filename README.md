@@ -3,7 +3,7 @@
 [![Join the chat at https://gitter.im/AsaAyers/code-links](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AsaAyers/code-links?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Makes parts of your code linkable using ctrl+click. Pluggable architecture
-allows other plugins to provide link locations and destinations.
+allows other plugins to provide link locations and destinations. [docs](docs/service_provider.md)
 
 I have been informed that on a mac ctrl+click opens the context menu. v0.2.0
 will detect this and use alt instead.
