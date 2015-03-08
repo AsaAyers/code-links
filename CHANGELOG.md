@@ -1,3 +1,6 @@
+## 0.3.7
+* :up_arrow: Update to espree 1.11 to gain class and module support
+
 ## 0.3.6
 * Prevent ctrl+click from creating multiple cursors when ctrl+clicking a link
 * :memo: Documentation on how to create compatible plugins
