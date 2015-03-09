@@ -1,3 +1,6 @@
+## 0.3.8
+* `javascript-processor` links variables to where they were defined. When the declaration is a simple `var x = require(...)` `x` will link to the destination file.
+
 ## 0.3.7
 * :up_arrow: Update to espree 1.11 to gain class and module support
 

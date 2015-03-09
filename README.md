@@ -10,6 +10,8 @@ will detect this and use alt instead.
 
 ![screenshot](https://raw.githubusercontent.com/AsaAyers/code-links/master/screenshot.png)
 
+By default the blue underlines only show up while holding your modifier key (either `ctrl` or `alt`). I turned these on for the screenshot.
+
 ## Known plugins
 
 * [coffee-links](https://atom.io/packages/coffee-links)
@@ -26,7 +28,7 @@ Plugins may choose to link to URLs instead of a file on disk. The link opens the
 * JavaScript Processor
   * [x] Parse the AST and read all `require()`s and `imports`.
   * [x] Jump using module names that aren't relative paths.
-  * [ ] Make variables into links so you can jump to where they're defined.
+  * [x] Make variables into links so you can jump to where they're defined.
 
 ```javascript
 const SubAtom = require('sub-atom')
