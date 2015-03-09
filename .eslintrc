@@ -34,6 +34,7 @@
         "no-var": [2],
         "indent": 4,
         "no-underscore-dangle": false,
+        "comma-dangle": false,
         "no-comma-dangle": false,
         "camelcase": false,
         "quotes": [1, "single", "avoid-escape"],
