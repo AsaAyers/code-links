@@ -1,3 +1,6 @@
+## 0.3.8
+* Scroll to cursor position when switching files.
+
 ## 0.3.7
 * :up_arrow: Update to espree 1.11 to gain class and module support
 
