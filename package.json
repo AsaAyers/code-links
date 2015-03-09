@@ -24,6 +24,7 @@
     }
   },
   "dependencies": {
+    "escope": "^2.0.6",
     "espree": "^1.11.0",
     "resolve": "^1.1.5",
     "sub-atom": "^1.0.0"
