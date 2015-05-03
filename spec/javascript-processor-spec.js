@@ -29,6 +29,7 @@ describe('javascript-processor', function() {
             let modulePath = require('some/complex/path')
             `;
             let result = processor.process(source);
+            console.log(result);
 
             this.addMatchers({
                 toMatchPath(expectedPath) {
@@ -44,13 +45,17 @@ describe('javascript-processor', function() {
 
                     // Services may attach any useful properties they want that
                     // might be useful when being passed back into followLink.
-                    expect(link.modulePath).toBe(expectedPath);
+                    expect(link.moduleName).toBe(expectedPath);
 
                     let [
                         [startLine, startCol],
                         [endLine, endCol]
                     ] = link.range;
                     expect(startLine).toBe(endLine);
+
+                    // Remove the quotes before comparing
+                    startCol += 1;
+                    endCol -= 1;
                     expect(lines[startLine].slice(startCol, endCol)).toBe(expectedPath);
                     return true;
                 },
@@ -69,8 +74,8 @@ describe('javascript-processor', function() {
             expect('relative').toMatchPath('./same');
             expect('relativeParent').toMatchPath('../parent');
 
-            expect('moduleName').toNotBeDetected('some-module');
-            expect('modulePath').toNotBeDetected('some/complex/path');
+            expect('moduleName').toMatchPath('some-module');
+            expect('modulePath').toMatchPath('some/complex/path');
         });
     });
     describe('followLink()', function() {
@@ -79,9 +84,10 @@ describe('javascript-processor', function() {
     describe('scanForDestination()', function() {
         let scanFor = function(source, target) {
 
-            let [ lineNum, col ] = processor.scanForDestination(source);
+            let [ lineNum, col ] = processor.scanForDestination(source, {});
             let actual = source.split('\n')[lineNum]
                 .slice(col, col + target.length );
+
             expect(actual).toBe(target);
         };
 
