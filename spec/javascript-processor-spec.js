@@ -27,6 +27,7 @@ describe('javascript-processor', function() {
             let relativeParent = require('../parent')
             let moduleName = require('some-module')
             let modulePath = require('some/complex/path')
+            import ImportedModule from './imported_module';
             `;
             let result = processor.process(source);
             console.log(result);
@@ -76,6 +77,7 @@ describe('javascript-processor', function() {
 
             expect('moduleName').toMatchPath('some-module');
             expect('modulePath').toMatchPath('some/complex/path');
+            expect('ImportedModule').toMatchPath('./imported_module');
         });
     });
     describe('followLink()', function() {
