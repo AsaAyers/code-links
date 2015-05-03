@@ -1,3 +1,7 @@
+## 0.3.9
+* Fixed tests
+* Added support for ES6 module imports [#12](https://github.com/AsaAyers/code-links/pull/12)
+
 ## 0.3.8
 * Scroll to cursor position when switching files.
 * `javascript-processor` links variables to where they were defined. When the declaration is a simple `var x = require(...)` `x` will link to the destination file.
