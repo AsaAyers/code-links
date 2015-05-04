@@ -1,3 +1,8 @@
+## 0.3.10
+* Use `@text-color` as color for highlighting links
+* Strip CRLF from the repo
+* Add option to use Meta key (cmd/win)
+
 ## 0.3.9
 * Fixed tests
 * Added support for ES6 module imports [#12](https://github.com/AsaAyers/code-links/pull/12)
