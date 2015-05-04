@@ -5,4 +5,11 @@
 'body.code-links-ctrl atom-text-editor': {
   'ctrl': 'code-links:tmp-show-links'
 }
-'body.code-links-alt atom-text-editor': {  'alt': 'code-links:tmp-show-links'}
+
+'body.code-links-alt atom-text-editor': {
+  'alt': 'code-links:tmp-show-links'
+}
+
+'body.code-links-meta atom-text-editor': {
+  'command': 'code-links:tmp-show-links'
+}
