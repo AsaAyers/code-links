@@ -1,6 +1,6 @@
 # code-links package
 
-Deprecated
+:rotating_light: Deprecated :rotating_light: 
 ==========
 
 If you use `code-links` for scanning JavaScript and not CoffeeScript, you should uninstall it and install [`js-hyperclick`][js-hyperclick] and [hyperclick][hyperclick] instead.
