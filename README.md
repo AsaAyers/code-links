@@ -1,39 +1,30 @@
 # code-links package
 
-[![Join the chat at https://gitter.im/AsaAyers/code-links](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AsaAyers/code-links?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Deprecated
+==========
 
-Makes parts of your code linkable using ctrl+click. Pluggable architecture
-allows other plugins to provide link locations and destinations. [docs](docs/service_provider.md)
+If you use `code-links` for scanning JavaScript and not CoffeeScript, you should uninstall it and install [`js-hyperclick`][js-hyperclick] and [hyperclick][hyperclick] instead.
 
-I have been informed that on a mac ctrl+click opens the context menu. v0.2.0
-will detect this and use alt instead.
+code-links
+==========
 
-![screenshot](https://raw.githubusercontent.com/AsaAyers/code-links/master/screenshot.png)
+`code-links` does two things:
 
-By default the blue underlines only show up while holding your modifier key (either `ctrl` or `alt`). I turned these on for the screenshot.
+1. Provide a service allowing other plugins to scan code to produce links.
+2. Acts as one of those other plugins providing JavaScript scanning.
 
-## Known plugins
+Combining these two was a mistake that I'm going to fix now.
+[hyperclick][hyperclick] completely overlaps with the first goal of this
+project. As for the 2nd goal, I have rewritten `code-links` as [`js-hyperclick`][js-hyperclick].
 
-* [coffee-links](https://atom.io/packages/coffee-links)
+What about the other plugins?
+=============================
 
-## Web Page URLs
+I got no traction in getting others to write plugins for `code-link`. The only
+plugin I'm aware of is [`coffee-links`][coffee-links]. I have no plans to
+rewrite or migrate this plugin. I have moved away from using CoffeeScript as it
+provides very few benefits over ES6.
 
-Plugins may choose to link to URLs instead of a file on disk. The link opens the URL in the default external browser or shows the web page inside atom if the package `web-browser` is installed.
-
-# Upcoming plans
-
-* core
-  * [x] Hide the underlines by default, only show them while holding the modifier key.
-  * [x] Add the ability to jump to a specific line in a file once it's open.
-* JavaScript Processor
-  * [x] Parse the AST and read all `require()`s and `imports`.
-  * [x] Jump using module names that aren't relative paths.
-  * [x] Make variables into links so you can jump to where they're defined.
-
-```javascript
-const SubAtom = require('sub-atom')
-// ... many lines later ...
-    this.subs = new SubAtom()
-    //              ^
-    // Jump the same as if you clicked the require.
-```
+[hyperclick]: https://atom.io/packages/hyperclick
+[js-hyperclick]: https://atom.io/packages/js-hyperclick
+[coffee-links]: https://atom.io/packages/coffee-links

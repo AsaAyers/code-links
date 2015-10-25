@@ -32,11 +32,11 @@
     "rules": {
         "strict": [2, "never"],
         "no-var": [2],
-        "indent": 4,
-        "no-underscore-dangle": false,
-        "comma-dangle": false,
-        "no-comma-dangle": false,
-        "camelcase": false,
+        "indent": [2, 4],
+        "no-underscore-dangle": [0],
+        "comma-dangle": [0],
+        "no-comma-dangle": [0],
+        "camelcase": [0],
         "quotes": [1, "single", "avoid-escape"],
         "func-style": [2, "expression"]
     }
