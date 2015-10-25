@@ -1,7 +1,7 @@
 {
   "name": "code-links",
   "main": "./lib/code-links",
-  "version": "0.3.11",
+  "version": "0.4.0",
   "description": "Provides the ability to ctrl+click around your project.",
   "repository": "https://github.com/AsaAyers/code-links",
   "license": "MIT",
