@@ -11,5 +11,5 @@
 }
 
 'body.code-links-meta atom-text-editor': {
-  'command': 'code-links:tmp-show-links'
+  'cmd': 'code-links:tmp-show-links'
 }
